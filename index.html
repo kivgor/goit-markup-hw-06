@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="./css/styles.css" />
 </head>
 
-<body>
+<body>  
   <header class="header">
     <div class="container header-container">
       <nav class="header-nav">
@@ -35,19 +35,25 @@
           <li class="address-item"><a class="address-link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
         </ul>
       </address>
+      
+      <button class="burger-btn" type="button">
+        <svg class="icon-burger" width="24" height="24">
+          <use href="./images/icons.svg#icon-burger"></use>
+        </svg>
+      </button>
     </div>
   </header>
 
   <main>
 
-    <section class="hero">
+    <section class="hero hidden">
       <div class="container hero-container">
         <h1 class="hero-title">Effective Solutions for Your Business</h1>
         <button data-modal-open class="hero-btn" type="button">Order Service</button>
       </div>
     </section>
 
-    <section class="about section">
+    <section class="about section hidden">
       <div class="container about-container">
         <h2 class="visually-hidden">About us</h2>
         <ul class="about-list">
@@ -103,7 +109,7 @@
       </div>
     </section>
 
-    <section class="team section">
+    <section class="team section hidden">
       <div class="container team-container">
         <h2 class="team-title">Our Team</h2>
         <ul class="team-list">
@@ -268,7 +274,7 @@
       </div>
     </section>
 
-    <section class="portfolio section">
+    <section class="portfolio section hidden">
       <div class="container portfolio-container">
         <h2 class="portfolio-title">Our Portfolio</h2>
         <ul class="portfolio-list">
@@ -349,7 +355,7 @@
     </section>
   </main>
 
-  <footer class="footer">
+  <footer class="footer hidden">
     <div class="container footer-container">
       <div class="logo-container">
         <a class="logo footer-logo" href="./index.html">Web<span class="logo-part">Studio</span></a>
@@ -408,7 +414,7 @@
   </footer>
 
   <!-- <div class="backdrop" is-open data-modal> -->
-    <div class="backdrop" data-modal>
+    <div class="hidden backdrop" data-modal>
     <div class="modal">
       <button type="button" class="modal-close-btn" data-modal-close>
         <svg class="icon-close" width="8" height="8">
